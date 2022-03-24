@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HANCOM Navigation</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- jquery.min.js를 연결 하는 이유 - 제이쿼리 문서는 브라우저에서 바로 해석되지 못한다 그래서 브라우저에서 제이쿼리가 해석될수 있도록 미리 만들어진 문서를 먼저 연결한다. 순서 중요 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/gnb_inactive.js"></script>
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <nav id="gnb">
+        <ul> <!-- depth1 ul -->
+            <li> <!-- depth1 li -->
+                <a href="#">WORK</a> <!-- depth1 a -->
+                <ul> <!-- depth2 ul -->
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CLIENT</a></li>
+                </ul>
+            </li>
+            <li> <!-- depth1 li -->
+                <a href="#">ABOUT</a>
+                <ul>
+                    <li><a href="#">Hancomm is</a></li>
+                    <li><a href="#">ORGANIZATION</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> NEWS</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
